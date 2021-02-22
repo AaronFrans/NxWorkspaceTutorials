@@ -1,0 +1,30 @@
+{
+  "npmScope": "myorg",
+  "affected": { "defaultBase": "master" },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "YzgyMzYxZjItNTRhNS00ZjFiLTg2YjEtNWRiZDE2ZjFhOTM1fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "tutorial": { "tags": [] },
+    "tutorial-e2e": { "tags": [], "implicitDependencies": ["tutorial"] },
+    "api": { "tags": [] },
+    "data": { "tags": [] },
+    "ui": { "tags": [] }
+  }
+}
